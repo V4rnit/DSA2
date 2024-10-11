@@ -46,7 +46,7 @@ main {
     vertical-align: middle;                /* Change cursor to pointer */
 }
 .head i.fa-github:hover {
-    color: #1B1F24;   /* GitHub logo color on hover */
+    color: #6e5494;   /* GitHub logo color on hover */
     cursor: pointer;
     vertical-align: middle;
 }
@@ -198,4 +198,22 @@ p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.align-left {
+    float: left;     /* Align the span to the left */
+    padding-right: 0px; /* Add some spacing to the right */
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.text{
+    margin-top: 30px;
+    
+}
+.glow-green {
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.glow-green:hover {
+    color: #3CB371; /* Change to LeetCode easy text green on hover */
 }
