@@ -217,3 +217,11 @@ p {
 .glow-green:hover {
     color: #3CB371; /* Change to LeetCode easy text green on hover */
 }
+.glow-yellow {
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.glow-yellow:hover {
+    color: #f7b500; /* Change to LeetCode easy text green on hover */
+}
