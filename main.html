@@ -99,9 +99,14 @@
                             <td class="td glow-yellow">Medium</td>
                             <td class="td-youtube"><a href="https://www.youtube.com/watch?v=unlsup_DwFs" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
                         </tr>
+                        <tr class = "table-content">
+                            <td class = "td"><a href = "" target="_blank">3Sum</a></td>
+                            <td class = "td glow-yellow">Medium</td>
+                            <td class = "td-youtube"><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
+                        </tr>
                         <tr class="table-content">
-                            <td class="td"><a href="https://leetcode.com/problems/trapping-rain-water/" target="_blank">Trapping Rain Water</a></td>
-                            <td class="td glow-yellow">Hard</td>
+                            <td class="td"><a href="https://leetcode.com/problems/trapping-rain-water/" target="_blank">Container with the most water</a></td>
+                            <td class="td glow-yellow">Medium</td>
                             <td class="td-youtube"><a href="https://www.youtube.com/watch?v=6qG8fivRLtM" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
                         </tr>
                     </table>
@@ -109,8 +114,35 @@
             </div>
 
             <div class="box" id="box3">
-                <h2 class="text"><span class="align-left">3#</span> Stack</h2>
+                <h2 class="text" id="pop-inside-binary-search"><span class="align-left">3#</span>Binary Search</h2>
             </div>
+            <div class="popup" id="popup-modal-binary-search">
+                <div class="pop-content">
+                    <i class="fa-solid fa-x" id="close-popup-binary-search"></i>
+                    <h2 class="h2">Binary Search Problems</h2>
+                    <table>
+                        <tr id="table-head">
+                            <th class="th">Problem</th>
+                            <th class="th">Difficulty</th>
+                            <th class="th">Solution</th>
+                        </tr>
+                        <tr class="table-content">
+                            <td class="td"><a href="https://leetcode.com/problems/binary-search/" target="_blank">Binary Search</a></td>
+                            <td class="td glow-green">Easy</td>
+                            <td class="td-youtube"><a href="https://www.youtube.com/watch?v=4PbETBPI_P0&t=1s" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
+                        </tr>
+                        <tr class="table-content">
+                            <td class="td"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" target="_blank">Find Minimum in Rotated Sorted Array</a></td>
+                            <td class="td glow-yellow">Medium</td>
+                            <td class="td-youtube"><a href="https://www.youtube.com/watch?v=9bsevtx4MhY" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
+                        </tr>
+                        <tr class="table-content">
+                            <td class="td"><a href="https://leetcode.com/problems/search-a-2d-matrix/description/" target="_blank">Search a 2D Matrix</a></td>
+                            <td class="td glow-yellow">Medium</td>
+                            <td class="td-youtube"><a href="https://www.youtube.com/watch?v=pcrPWXk13Ps" target="_blank"><i class="fa-brands fa-youtube"></i></a></td>
+                        </tr>
+
+                </div>
         </section>
     </main>
 
@@ -141,39 +173,59 @@
         const popup = document.getElementById("popup-modal");
         const closeBtn = document.getElementById("close-popup");
         const arrayBtn = document.getElementById("pop-inside");
-
+    
         arrayBtn.addEventListener("click", function() {
             popup.classList.add("show");
         });
-
+    
         closeBtn.addEventListener("click", function() {
             popup.classList.remove("show");
         });
-
+    
         window.addEventListener("click", function(event) {
             if (event.target === popup) {
                 popup.classList.remove("show");
             }
         });
-
+    
         // Two Pointer modal functionality
         const popupTwoPointer = document.getElementById("popup-modal-two-pointer");
         const closeBtnTwoPointer = document.getElementById("close-popup-two-pointer");
         const twoPointerBtn = document.getElementById("pop-inside-two-pointer");
-
+    
         twoPointerBtn.addEventListener("click", function() {
             popupTwoPointer.classList.add("show");
         });
-
+    
         closeBtnTwoPointer.addEventListener("click", function() {
             popupTwoPointer.classList.remove("show");
         });
-
+    
         window.addEventListener("click", function(event) {
             if (event.target === popupTwoPointer) {
                 popupTwoPointer.classList.remove("show");
             }
         });
+    
+        // Binary Search modal functionality
+        const popupBinarySearch = document.getElementById("popup-modal-binary-search");
+        const closeBtnBinarySearch = document.getElementById("close-popup-binary-search");
+        const binarySearchBtn = document.getElementById("pop-inside-binary-search");
+    
+        binarySearchBtn.addEventListener("click", function() {
+            popupBinarySearch.classList.add("show");
+        });
+    
+        closeBtnBinarySearch.addEventListener("click", function() {
+            popupBinarySearch.classList.remove("show");
+        });
+    
+        window.addEventListener("click", function(event) {
+            if (event.target === popupBinarySearch) {
+                popupBinarySearch.classList.remove("show");
+            }
+        });
     </script>
+
 </body>
 </html>
