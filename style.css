@@ -1,11 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .head {
     font-size: 50px;                /* Text size for DSA RoadMap */
     text-align: center;
     background-color: grey;
     margin: 0;                      /* Remove margin to eliminate gaps */
-    padding-bottom: none;                /* Optional: Adjust padding if needed */
+    padding-bottom: none;           /* Optional: Adjust padding if needed */
 }
-.head a{
+
+.head a {
     text-decoration: none;
     color: inherit;
     margin-right: 30px;
@@ -27,7 +34,6 @@ main {
     font-size: 40px;                /* Match the size of DSA text */
 }
 
-
 .head i {
     font-size: 24px;                /* Set a specific size for the icons */
     transition: color 0.3s ease;    /* Smooth transition for color change */
@@ -37,16 +43,16 @@ main {
     color: #0077B5;                 /* LinkedIn blue on hover */
     cursor: pointer;  
     vertical-align: middle;
-    
 }
 
 .head i.fa-youtube:hover {
     color: red;                     /* Change color to red on hover */
     cursor: pointer; 
-    vertical-align: middle;                /* Change cursor to pointer */
+    vertical-align: middle;         /* Change cursor to pointer */
 }
+
 .head i.fa-github:hover {
-    color: #6e5494;   /* GitHub logo color on hover */
+    color: #6e5494;                 /* GitHub logo color on hover */
     cursor: pointer;
     vertical-align: middle;
 }
@@ -63,11 +69,10 @@ main {
     box-shadow: 10px 10px 7px black;
 }
 
-
 .container {
     display: flex;              /* Enable flexbox */
     flex-direction: column;    /* Stack the items vertically */
-    align-items: center;    /* Center the boxes horizontally */
+    align-items: center;       /* Center the boxes horizontally */
 }
 
 p {
@@ -76,21 +81,23 @@ p {
     font-weight: bold; /* Make the text bold */
     margin-bottom: 40px;
 }
+
 .box:hover {
     background-color: #d0d0d0; /* Change background color on hover */
     transform: scale(1.05); /* Slightly scale up the box on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
+
 .box a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit color from parent element */
 }
+
 .box a:hover {
     text-decoration: none; /* Ensure no underline on hover */
     color: inherit; /* Ensure color remains the same on hover */
 }
 
-
-/* Popup container */
 /* Popup container */
 .popup {
     background: rgba(0, 0, 0, 0.5); /* Adds a translucent background */
@@ -115,7 +122,6 @@ p {
     pointer-events: all; /* Enables clicks */
 }
 
-
 /* Popup content */
 .pop-content {
     height: 200px;
@@ -126,26 +132,29 @@ p {
     position: relative;
 }
 
-#pop-inside{
+#pop-inside {
     text-align: center;
     cursor: pointer;
 }
-#table-head{
+
+#table-head {
     background-color: grey;
 }
-.table-content{
+
+.table-content {
     background-color: lightgrey;
-    
 }
-.th{
+
+.th {
     width: 500px;
-    text-align:center;
-}
-.td{
     text-align: center;
 }
+
+.td {
+    text-align: center;
+}
+
 .td a {
-    
     text-decoration: none; /* Remove underline */
     color: inherit; /* Ensure color remains the same */
     display: inline-block; /* Makes the link act like a block element */
@@ -162,6 +171,7 @@ p {
 .td a:active {
     outline: none; /* Remove focus outline on click */
 }
+
 .td-youtube a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Ensure color remains the same */
@@ -191,32 +201,23 @@ p {
     cursor: pointer; /* Make the cursor a pointer on hover */
 }
 
-.h2{
+.h2 {
     text-align: center;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.align-left {
-    float: left;     /* Align the span to the left */
-    padding-right: 0px; /* Add some spacing to the right */
-    margin-top: 0px;
-    margin-left: 10px;
-}
-.text{
+
+.text {
     margin-top: 30px;
-    
 }
+
 .glow-green {
     cursor: pointer; /* Pointer cursor on hover */
     transition: color 0.3s ease; /* Smooth transition */
 }
 
 .glow-green:hover {
-    color: #3CB371; /* Change to LeetCode easy text green on hover */
+    color: #00b8a3; /* Change to LeetCode easy text green on hover */
 }
+
 .glow-yellow {
     cursor: pointer; /* Pointer cursor on hover */
     transition: color 0.3s ease; /* Smooth transition */
@@ -224,4 +225,8 @@ p {
 
 .glow-yellow:hover {
     color: #f7b500; /* Change to LeetCode easy text green on hover */
+}
+.align-left{
+    float: left;
+    margin-left: 20px;
 }
